@@ -44,10 +44,10 @@ The designs were created to the following widths:
     /* typographie */
     --font-size-p: 18px;
     /* font */ 
-    --font-family: outfit;
+    --font-family: Outfit;
     --font-weight-300: 300;
     --font-weight-400: 400;
-    --font-weight-600: 600;
+    --font-weight-600: 600px;
 }
 
 body{
@@ -63,6 +63,8 @@ body{
 }
 
 .card {    
+    display: flex;
+    flex-direction: column;
     border-radius: 20px;
     width: 350px;
     height: 600px;
@@ -72,4 +74,42 @@ body{
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card-img {
+    margin-top: 25px;
+    border-radius: 10px;
+    margin-left: 25px;
+    background-image: url("picture/image-equilibrium.jpg");
+    background-size: contain;
+    width: 300px;
+    height: 300px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.card-title {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 30px;
+}
+
+.title-text{
+    font-weight: 600;
+    font-family: var(--font-family);
+    color: var(--white);
+}
+
+.text-card {
+    margin-top: 0px;
+    margin-left: 30px;
+    margin-right: 25px;
+    font-weight: var(--font-weight-300);
+    color: var(--white);
+}
+
+.logo-bottom {
 }
